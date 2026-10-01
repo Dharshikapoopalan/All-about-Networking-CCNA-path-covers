@@ -1,4 +1,3 @@
-<img width="467" height="339" alt="image" src="https://github.com/user-attachments/assets/a42308c5-65f9-4bde-99e6-0197a6caa3e6" /># All-about-Networking-CCNA-path-covers
 All networking concepts to know to become a Network pro
 
 Network Devices
