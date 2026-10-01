@@ -67,20 +67,14 @@ The important thing about a hub is that it doesn't intelligently decide where da
 
 Imagine four computers connected to a hub:
 
-       PC-A
-         |
-PC-B --- HUB --- PC-C
-         |
-       PC-D
+<img width="166" height="121" alt="image" src="https://github.com/user-attachments/assets/7a73d8e4-e11a-48f4-8249-f51c0e17073c" />
 
 Suppose PC-A sends data intended for PC-C.
 
 The hub sends that data out to all the other connected ports.
 
-PC-A → HUB
-         ├──→ PC-B
-         ├──→ PC-C  ✓ intended receiver
-         └──→ PC-D
+<img width="280" height="95" alt="image" src="https://github.com/user-attachments/assets/fefdecbd-9b39-47c9-a305-bbee1abc2225" />
+
 
 PC-B and PC-D receive it too, even though it wasn't intended for them.
 
@@ -98,20 +92,23 @@ A switch connects devices within the same local network or LAN.
 Unlike a hub, a switch can learn which devices are connected to which ports using MAC addresses.
 
 Imagine:
-           SWITCH
-        /    |    \
-      PC-A  PC-B  PC-C
+
+<img width="176" height="80" alt="image" src="https://github.com/user-attachments/assets/00e9dbfa-46ed-460b-9c72-b1475a1f9808" />
 
 Suppose:
 PC-A MAC = AA:AA
+
 PC-B MAC = BB:BB
+
 PC-C MAC = CC:CC
 
 The switch builds a MAC address table, conceptually like this:
 
 Switch Port	MAC Address
 Port 1	AA:AA
+
 Port 2	BB:BB
+
 Port 3	CC:CC
 
 
@@ -135,13 +132,8 @@ You can think of a bridge as an earlier predecessor to the modern Layer 2 switch
 
 For example:
 
-Network Segment A
-PC1 --- PC2
-        |
-      BRIDGE
-        |
-PC3 --- PC4
-Network Segment B
+<img width="165" height="155" alt="image" src="https://github.com/user-attachments/assets/77155a44-464f-4137-bff4-763cb9e8fa64" />
+
 
 The bridge learns which MAC addresses exist on each side and decides whether traffic needs to cross the bridge.
 
