@@ -11,7 +11,7 @@ The building blocks of networks are end devices and network devices.
 
 <img width="566" height="149" alt="image" src="https://github.com/user-attachments/assets/bc434361-08c1-492d-a226-f43ae75b610d" />
 
-1. End Devices
+**1. End Devices**
 
 <img width="318" height="206" alt="image" src="https://github.com/user-attachments/assets/5a6300d3-4ed3-4778-bf35-360fe5eef92e" />
 
@@ -23,7 +23,7 @@ Laptop → Switch → Router → Internet → Server
 
 The laptop and server are end devices. The switch and router are network devices.
 
-2. Network Devices
+**2. Network Devices**
 
 Network devices sit between end devices and help connect, forward, control, or protect network traffic.
 Examples include switches, routers, bridges, hubs, firewalls, and wireless access points.
@@ -31,7 +31,7 @@ Examples include switches, routers, bridges, hubs, firewalls, and wireless acces
 Think of it this way:
 End devices create/utilize the communication. Network devices help the communication reach its destination.
 
-3. Network Interface Card — NIC
+**3. Network Interface Card — NIC**
 
 Wireless NICs are placed inside laptops. 
 <img width="292" height="242" alt="image" src="https://github.com/user-attachments/assets/6d9f85b4-2366-4961-9dd1-f626f9ba6907" />
@@ -57,7 +57,8 @@ Switch
 
 **"The NIC is the device's doorway into the network."**
 
-4. Hub
+**4. Hub**
+
 <img width="495" height="294" alt="image" src="https://github.com/user-attachments/assets/ab5b5098-654c-490a-831d-ced174f8d364" />
 
 A hub is a simple networking device that connects multiple devices.
@@ -88,7 +89,7 @@ Hub = Send everywhere.
 
 Hubs are largely obsolete today and have been replaced by switches.
 
-5. Switch
+**5. Switch**
 
 <img width="609" height="225" alt="image" src="https://github.com/user-attachments/assets/a1724917-e61a-48cd-955a-88eb746770b5" />
 
@@ -124,7 +125,7 @@ A switch connects devices inside a LAN and forwards Ethernet frames based primar
 
 A traditional Layer 2 switch operates mainly at OSI Layer 2 – Data Link Layer.
 
-6. Bridge
+**6. Bridge**
 
 <img width="527" height="368" alt="image" src="https://github.com/user-attachments/assets/62c62eb9-5d72-4274-8818-bbf84906aed2" />
 
@@ -149,7 +150,7 @@ The bridge learns which MAC addresses exist on each side and decides whether tra
 
 Modern switches essentially perform the same basic Layer 2 bridging function, but at much greater scale and speed with many ports.
 
-7. Router
+**7. Router**
 
 <img width="467" height="339" alt="image" src="https://github.com/user-attachments/assets/94f051c2-ae0c-41f0-9b34-3470e762ae5a" />
 
@@ -214,7 +215,7 @@ Network ↔ Network
 Uses IP addresses
 
 
-8. Client
+**8. Client**
 
 <img width="273" height="180" alt="image" src="https://github.com/user-attachments/assets/04dd7b75-57a8-44ef-a6fa-399b50bbe786" />
 
@@ -248,7 +249,7 @@ Database client → Database Server
 So:
 Client = requests/uses a service.
 
-9. Server
+**9. Server**
 
 A server is a system or application that provides a service or resource to clients.
 
@@ -283,11 +284,14 @@ Database server	Database services
 
 **Important: client and server describe roles, not necessarily specific types of physical computers. One machine can run client applications and server applications.**
 
-10. Firewall
+
+**10. Firewall**
 
 We have Hardware Firewalls and Software Firewalls.
 
 <img width="880" height="321" alt="image" src="https://github.com/user-attachments/assets/66649667-e991-4b84-a795-28ad08fdc872" />
+
+<img width="542" height="274" alt="image" src="https://github.com/user-attachments/assets/eed141a0-99e0-4e7d-88ed-268537b6890f" />
 
 A firewall controls network traffic according to security rules.
 
