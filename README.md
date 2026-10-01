@@ -152,39 +152,22 @@ This is one of the most important concepts to understand.
 
 A switch commonly connects devices within a network:
 
-192.168.1.10
-192.168.1.20
-192.168.1.30
-      |
-    SWITCH
+<img width="113" height="107" alt="image" src="https://github.com/user-attachments/assets/3e380893-ae7f-484d-988e-21e052b573f0" />
+
 
 A router allows traffic to travel between networks.
 
 For example:
-192.168.1.0/24
-      |
-    Switch
-      |
-    Router
-      |
-   Internet
-      |
-   Web Server
+
+<img width="131" height="193" alt="image" src="https://github.com/user-attachments/assets/a6761126-3b12-4eef-9d13-ecc85afd2db8" />
+
 
 Routers primarily make forwarding decisions using IP addresses and routing tables.
 
 For example:
-Destination: 8.8.8.8
 
-PC
- ↓
-Switch
- ↓
-Router
- ↓
-Internet
- ↓
-8.8.8.8
+<img width="237" height="236" alt="image" src="https://github.com/user-attachments/assets/fa5cadfe-ad7b-42ba-b486-062e09144176" />
+
 
 The router checks its ** routing table **to determine where to send the IP packet next.
 
@@ -195,16 +178,7 @@ Routers primarily operate at OSI Layer 3 – Network Layer.
 Switch vs Router
 This distinction is extremely important:
 
-SWITCH
-
-Device ↔ Device
-within a LAN
-Uses MAC addresses
-
-ROUTER
-
-Network ↔ Network
-Uses IP addresses
+<img width="175" height="170" alt="image" src="https://github.com/user-attachments/assets/c19365ff-2e3f-40ad-8872-fc3f8cf28e5c" />
 
 
 **8. Client**
@@ -216,27 +190,15 @@ A client is a device or application that requests a service or resource.
 Suppose you open a browser and enter a website.
 
 Your browser becomes a client:
-Your Laptop
-    |
- Chrome
- CLIENT
-    |
-    | "Give me the webpage"
-    ↓
-Internet
-    ↓
-Web Server
+
+<img width="209" height="219" alt="image" src="https://github.com/user-attachments/assets/59127854-2a93-487a-8939-6008ceef2618" />
 
 Clients can request many different services.
 
 For example:
-Browser → Web Server
 
-Email application → Mail Server
+<img width="249" height="100" alt="image" src="https://github.com/user-attachments/assets/2ad000ec-1867-4f9d-af0c-6493fcb5e248" />
 
-SSH client → SSH Server
-
-Database client → Database Server
 
 So:
 Client = requests/uses a service.
@@ -247,32 +209,11 @@ A server is a system or application that provides a service or resource to clien
 
 For example, a web server provides websites.
 
-CLIENT                     SERVER
-
-Laptop                    Web Server
-Chrome                    Nginx
-   |                         |
-   | ---- HTTP Request ----> |
-   |                         |
-   | <--- HTTP Response ---- |
-   |                         |
+<img width="267" height="198" alt="image" src="https://github.com/user-attachments/assets/e1e542a6-f12d-442d-aa97-0f9ff8503c5b" />
 
 Different servers provide different services:
 
-Server	What it provides
-
-Web server	Websites/web applications
-
-DNS server	Name-to-IP resolution
-
-DHCP server	IP configuration
-
-File server	Files
-
-Mail server	Email services
-
-Database server	Database services
-
+<img width="531" height="317" alt="image" src="https://github.com/user-attachments/assets/9711696c-c1e5-4887-aaad-c93a338c61e8" />
 
 **Important: client and server describe roles, not necessarily specific types of physical computers. One machine can run client applications and server applications.**
 
@@ -291,41 +232,25 @@ It decides which traffic should be allowed or blocked.
 
 Imagine a company network:
 
-Internet
-   |
-   ↓
-FIREWALL
-   |
-   ↓
-Company Network
+<img width="142" height="153" alt="image" src="https://github.com/user-attachments/assets/137ed5c0-346e-417f-9aae-e3d30ac8aa62" />
+
 
 Suppose the firewall has rules such as:
 
-Allow HTTPS     TCP 443     ✓
-Allow SSH       TCP 22      only from admin network
-Block unwanted traffic      ✗
+<img width="382" height="75" alt="image" src="https://github.com/user-attachments/assets/6142eb2a-9ea3-4b76-98f0-5ff000dbb293" />
+
 
 When traffic arrives, the firewall evaluates it against configured policies.
 
 For example:
-Internet
-   |
-   | TCP 443
-   ↓
-Firewall
-   |
-   | ALLOW ✓
-   ↓
-Web Server
+
+<img width="154" height="188" alt="image" src="https://github.com/user-attachments/assets/0a84cdf7-d592-491f-acc6-c5a7c3270736" />
+
 
 But:
-Internet
-   |
-   | Unauthorized traffic
-   ↓
-Firewall
-   |
-   X BLOCK
+
+<img width="198" height="158" alt="image" src="https://github.com/user-attachments/assets/ee88943c-62f4-4997-bca4-d13c57a54f48" />
+
 
 Modern firewalls can inspect much more than simple IP addresses and port numbers, depending on the firewall type.
 
@@ -333,61 +258,44 @@ Modern firewalls can inspect much more than simple IP addresses and port numbers
 
 An Overview of the concepts discussed.
 
+
 Imagine you're sitting at home and opening a website:
 
-             YOUR LAPTOP
-             End Device
-                 |
-                NIC
-                 |
-                 ↓
-              SWITCH
-                 |
-                 ↓
-              ROUTER
-                 |
-                 ↓
-             FIREWALL
-                 |
-                 ↓
-             INTERNET
-                 |
-                 ↓
-           WEB SERVER
-            End Device
+<img width="187" height="372" alt="image" src="https://github.com/user-attachments/assets/a316ba99-6994-40e7-bcf2-e8aa2f23be36" />
 
-Your browser is the client.
 
-The website's system is the server.
-
-Your NIC connects your device to the network.
-
-The switch connects devices within the LAN.
-
-The router moves packets between different networks.
-
-The firewall controls which traffic is permitted.
-
-The server receives the client's request and sends a response.
-
-One-line memory trick
-
-Component	Remember it as
-
-NIC	Connects a device to the network
-
-Hub	Sends traffic everywhere
-
-Bridge	Connects LAN segments
-
-Switch	Connects devices in a LAN
-
-Router	Connects different networks
-
-Client	Requests a service
-
-Server	Provides a service
-
-Firewall	Allows/blocks traffic
+            Your browser is the client.
+            
+            The website's system is the server.
+            
+            Your NIC connects your device to the network.
+            
+            The switch connects devices within the LAN.
+            
+            The router moves packets between different networks.
+            
+            The firewall controls which traffic is permitted.
+            
+            The server receives the client's request and sends a response.
+            
+            One-line memory trick
+            
+            Component	Remember it as
+            
+            NIC	Connects a device to the network
+            
+            Hub	Sends traffic everywhere
+            
+            Bridge	Connects LAN segments
+            
+            Switch	Connects devices in a LAN
+            
+            Router	Connects different networks
+            
+            Client	Requests a service
+            
+            Server	Provides a service
+            
+            Firewall	Allows/blocks traffic
  
 
