@@ -40,6 +40,29 @@ YouTube, the video, your OS all of it is just a series of **0s** & **1s** that y
 
 -> When communicating across a copper network cable, a variation in the electrical signal is interpreted by the receiving device as a 0 or a 1. 
 
+**4. What is a byte?**
+
+A series of 8 bits. 
+
+8 Bits = 1 Byte
+
+<img width="730" height="208" alt="image" src="https://github.com/user-attachments/assets/ca7b0985-1755-4383-9a9c-1fac5f49bad9" />
+
+A byte: 8 bits of data being sent along a wire. 
+
+<img width="686" height="55" alt="image" src="https://github.com/user-attachments/assets/e48c9565-1065-42d5-a548-a9c95e5650d8" />
+
+Speed is measured in bits per second
+(Kbps, Mbps, Gbps, etc) not bytes per second. 
+
+<img width="807" height="362" alt="image" src="https://github.com/user-attachments/assets/3a60d8c1-bab7-4296-9aac-155e341252a6" />
+
+
+
+
+
+
+
 
 
 
