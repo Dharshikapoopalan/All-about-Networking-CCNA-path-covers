@@ -1,7 +1,7 @@
 Interfaces and Cables 
 
 Interfaces/Ports -> The switch has more interfaces
-10/100/1000 BaseT Ports(1-24) - Prots are Auto MDIX
+10/100/1000 BaseT Ports(1-24) - Ports are Auto MDIX
 
 <img width="386" height="518" alt="image" src="https://github.com/user-attachments/assets/4f6925ed-950a-4c5c-a7fa-8439c993b79c" />
 
