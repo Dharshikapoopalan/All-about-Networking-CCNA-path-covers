@@ -57,6 +57,54 @@ Speed is measured in bits per second
 
 <img width="807" height="362" alt="image" src="https://github.com/user-attachments/assets/3a60d8c1-bab7-4296-9aac-155e341252a6" />
 
+**Ethernet Standards**
+
+Defined in the IEEE 802.3 standard in 1983.
+
+IEEE = Institute of Electrical & Electronics Engineers. 
+
+<img width="933" height="212" alt="image" src="https://github.com/user-attachments/assets/433eddc4-0850-430b-ba04-bdb253f3216f" />
+
+Physical Cables / UTP(Unshielded Twisted Pair) Cables 
+
+The copper cables used in Ethernet standards are UTP cables. 
+
+UTP - Unshielded Twisted Pair cables(no metallic shield, which can make them vulnerable to electrical Interference).
+      4 pairs of cables twisted together protect against electromagnetic interference (EMI) 
+      In total, they have 8 wires. 
+
+<img width="700" height="571" alt="image" src="https://github.com/user-attachments/assets/92264f52-660d-4260-8d81-cf1de4e7896b" />
+
+RJ-45 connectors have 8 pins 
+
+<img width="955" height="169" alt="image" src="https://github.com/user-attachments/assets/80624ea7-2e86-47e2-bbb9-22b23d22a8d7" />
+
+**10 BASE-T & 100 BASE-T**
+
+Let's say we are connecting a PC to a Switch with a Fast Ethernet connection. 
+
+Keep in mind! Ethernet and Fast Ethernet connections use 4 wires.
+
+<img width="949" height="506" alt="image" src="https://github.com/user-attachments/assets/7506b4a2-ebee-4d3b-a0fc-e7c84a15e5d2" />
+
+<img width="829" height="548" alt="image" src="https://github.com/user-attachments/assets/a6ecdd4a-c16f-4c77-9566-8fa478a8837d" />
+
+A copper Ethernet cable has two RJ-45 connectors, one on each end. 
+Connects straight through: pin 1 on one end to pin 1 on the other end. 
+Pin2 connects to pin2; pin3 connects to pin3, etc.
+
+In networks, we don't always connect a PC to a switch, or a switch to a router. 
+
+What if we want to connect a router to another router, or a switch to another switch, or maybe connect 2 PC's together?
+
+
+
+
+
+
+
+
+
 
 
 
