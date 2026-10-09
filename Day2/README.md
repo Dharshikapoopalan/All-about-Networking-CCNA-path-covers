@@ -95,7 +95,71 @@ Pin2 connects to pin2; pin3 connects to pin3, etc.
 
 In networks, we don't always connect a PC to a switch, or a switch to a router. 
 
-What if we want to connect a router to another router, or a switch to another switch, or maybe connect 2 PC's together?
+What if we want to connect one router to another, one switch to another, or maybe connect 2 PCs?
+
+<img width="1197" height="462" alt="image" src="https://github.com/user-attachments/assets/6714d26e-e557-451f-94cb-a3638e972d14" />
+
+Router 2 isn't prepared to receive data on pins 1 & 2 of its interface, so communication between the two routers doesn't happen. 
+
+How can we successfully connect two routers, perhaps two switches, or two PCs?
+-> The same thing applies to connecting a pc directly to a router, also, because they both transmit data on pins 1 & 2, and receive data on pins 3 & 6.
+
+<img width="617" height="445" alt="image" src="https://github.com/user-attachments/assets/c131a04e-d517-4d57-824e-6e34540a1302" />
+
+So the answer to this problem is a different type of cable. 
+
+A straight-through cable connects pin1 to pin1, pin2 to pin2, pin3 to pin3 etc. 
+
+There is another type of cable: a  crossover cable. 
+
+<img width="726" height="399" alt="image" src="https://github.com/user-attachments/assets/9bcb9354-22d0-4676-a0e3-3b38e50a5043" />
+
+Pin 1 on one side connects to pin3 on the other side. Pin2 on one side connects to pin6 on the other side. Pin 3 on the left side will connect to pin1 on the right side. Pin 6 on the left side will connect to pin2 on the right side. 
+
+Wires are "Crossed over" each other, hence called a crossover cable.
+
+<img width="691" height="423" alt="image" src="https://github.com/user-attachments/assets/ca61a861-93b8-4937-b078-d1125a818ae4" />
+
+The transmit pins on one side are connected to the receive pins on the other side; now the two devices can send data to each other with no problems.
+
+<img width="753" height="499" alt="image" src="https://github.com/user-attachments/assets/0d6c8626-72b5-4d82-8176-531df892091c" />
+
+The network interface card on a PC & the network interfaces on a router both transmit data on pins 1 and 2 & receive data on pins 3 and 6; however, if you connect them with a crossover cable, they will be able to exchange data with no issues. 
+
+<img width="853" height="452" alt="image" src="https://github.com/user-attachments/assets/2222a266-cf74-4c64-968c-6dda5ea7f42a" />
+
+**UTP Cables (10 BASE-T, 100 BASE-T)**
+
+<img width="936" height="191" alt="image" src="https://github.com/user-attachments/assets/1ccebb0c-ccbe-43ab-b70b-fee075aaa594" />
+
+While all of that is important information to know and can cause issues in networks even in the modern day, the truth is that most modern networking devices have evolved beyond having to worry about straight-through or crossover cables. 
+
+That's because newer networking devices include a feature called Auto MDI-X.
+
+**Auto MDI-X**
+
+Previously, if two switches were connected with a straight-through cable like this, they would be unable to communicate. 
+
+<img width="597" height="435" alt="image" src="https://github.com/user-attachments/assets/5f022e9d-f094-4b70-b3fe-8e296e339694" />
+
+However, Auto MDI-X allows devices to automatically detect which pins their neighbor is transmitting data on, & then adjust which pins they use to transmit & receive data. 
+
+They can exchange data normally.
+
+<img width="609" height="476" alt="image" src="https://github.com/user-attachments/assets/2399229e-49bb-437f-87f6-ae2138ba5a9a" />
+
+So useless you are working with network equipment that is quite old; you don't really have to worry about straight-through & crossover cables. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
