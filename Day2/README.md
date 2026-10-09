@@ -150,6 +150,50 @@ They can exchange data normally.
 
 So useless you are working with network equipment that is quite old; you don't really have to worry about straight-through & crossover cables. 
 
+So unless you are working with network equipment that is quite old, you don't really have to worry about straight-through & crossover cables. 
+
+**UTP Cables - 1000 BASE-T, 10 GBASE-T**
+
+Higher-speed copper Ethernet cables. 
+
+For gigabit Ethernet & 10 Gigabit Ethernet, all 8 wires are used. 
+
+<img width="930" height="338" alt="image" src="https://github.com/user-attachments/assets/a6855f6d-f5c9-4255-9ea6-43f8caf80641" />
+
+Big difference between 1000 BASE-T & 10 GBASE-T, and 10 BASE-T & 100 BASE-T. 
+
+In addition to using all four pairs of wires, in 1000 BASE-T and 10 GBASE-T, each pair is **bidirectional**, meaning each pair isn't dedicated specifically to transmitting data or receiving data. 
+
+Each pair is **Bidirectional**.
+
+This is part of the reason that they can operate at much faster speeds. 
+
+**Fiber Optic Connections**
+
+We have covered a lot about connections using copper UTP cables. 
+
+But there is a newer technology that is superior in many ways. 
+
+For example, copper URP wiring can be used for up to 100 meters. That is usually plenty within a LAN, but how about for larger networks?
+
+Look at the Cisco Catalyst switch here; it has 24 ports for RJ-45 connectors.  
+
+<img width="782" height="288" alt="image" src="https://github.com/user-attachments/assets/23b90077-5c97-46ee-8fab-1f7f04fac335" />
+
+<img width="906" height="402" alt="image" src="https://github.com/user-attachments/assets/5098601c-7368-4dbb-9d25-603d7eacfff0" />
+
+Rather than an electrical signal over copper wiring, these cables send light over glass fibers. 
+
+There are two connectors on each end. 
+
+That's because you need one connector to transmit data & one to receive data on each end. 
+
+
+
+
+
+
+
 
 
 
