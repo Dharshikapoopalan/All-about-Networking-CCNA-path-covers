@@ -24,7 +24,9 @@
 
 **Q4. A switch has the following indication on its network interfaces:**
 
+10/100/1000 Base-T Ports(1-24) - Ports are Auto-MDI X
 <img width="5184" height="1608" alt="image" src="https://github.com/user-attachments/assets/cc03dc21-3cd8-4ccb-9ef9-fcb718f82082" />
+
 
 What would happen if you connected it to an identical switch with a Straight-through cable? 
 
