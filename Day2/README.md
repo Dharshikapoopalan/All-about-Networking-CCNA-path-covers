@@ -188,6 +188,67 @@ There are two connectors on each end.
 
 That's because you need one connector to transmit data & one to receive data on each end. 
 
+<img width="963" height="176" alt="image" src="https://github.com/user-attachments/assets/d19a3eba-3132-4e11-9452-e9ee6eeff107" />
+
+The copper UTP cables use separate wire pairs within the cable to transmit & receive data. 
+
+The fiber-optic cables instead use separate cables to transmit & receive, like this. 
+
+Transmit on the left connects to receive on the right & transmit on the right connects to receive on the left. 
+
+**Structure of the cable**
+
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/47b4ca95-b387-41bd-8cac-e2f75947329d" />
+
+1. The Fiberglass **core** itself -> Light is transmitted down this core to transmit data from one device to another.
+2. **Cladding** -> This reflects light.
+3. **Protective Buffer** -> Protects fiberglass from breaking.
+4. Outer jacket of the cable.
+
+Types of Fiber-Optic cables 
+
+1. Single-mode fiber
+2. Multi-mode fiber 
+
+**Multi-mode fiber**
+
+Two examples of multimode fiber cables. 
+
+<img width="872" height="226" alt="image" src="https://github.com/user-attachments/assets/c0053640-40ae-4acd-b4ad-e9d97cfb3e6a" />
+
+<img width="885" height="186" alt="image" src="https://github.com/user-attachments/assets/a5cf6e2b-ed56-4a09-88f0-4890ff90a337" />
+
+The center represents the fiberglass core, and the blue represents the reflective cladding that reflects light down the cable. 
+
+In a multi-mode fiber cable, the core, the actual glass fiber, is wider than in single-mode fiber. 
+
+* The core diameter is wider than in single-mode fiber.
+* A wider core allows multiple angles, known as modes, of light waves to enter the fiber glass core.
+* Allows longer cables than UTP, but shorter cables than single-mode fiber.
+* Cheaper than single-mode fiber (due to cheaper LED-based SFP transmission)
+
+**Single-mode fiber**
+
+<img width="871" height="184" alt="image" src="https://github.com/user-attachments/assets/464566ce-f00d-412e-ab7d-6876d0b4cb38" />
+
+-> The center represents the fiberglass core, & the blue represents the reflective cladding that reflects light down the cable. 
+
+* Core diameter is narrower than multimode fiber; glass fiber is thinner.
+* Light enters at a single angle(mode) from a laser-based transmitter.
+* Allows longer cables than both UTP & multimode fiber.
+* More expensive than multimode fiber (due to more expensive laser-based SFP transmitters) .
+
+**Standards for fiber-optic cables**
+
+<img width="931" height="213" alt="image" src="https://github.com/user-attachments/assets/abef9d7c-033b-49ea-aff7-fc62aa9dc8da" />
+
+<img width="933" height="355" alt="image" src="https://github.com/user-attachments/assets/4fc553da-07c1-4d8d-a9b0-d3550197d079" />
+
+
+
+
+
+
 
 
 
