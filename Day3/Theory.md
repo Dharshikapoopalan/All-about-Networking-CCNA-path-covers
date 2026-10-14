@@ -94,5 +94,16 @@ But there are many different standards and protocols.
 
 Each solves a different part of the overall communication problem; to make sense of them, it helps to group their jobs into layers, making a layered model.
 
+**Layered Models**
 
+* Networks do a lot of different jobs to move data from one computer to another.
+  * Physical transmission of signals, local delivery on a LAN, routing between networks, end-to-end conversations,         applications themselves.
+* A model lets us group related jobs into layers.
+  * Each layer has a specific role.
+  * Each later uses the services of the layer below and provides services to the layer above.
+* Protocols live(mostly) at one layer. sometimes the line are blurred and its hard to caregorize a protocol.
+  * Some examples of protocols that we'll look at later are IP, TCP, and HTTP, etc.
+  * Together they form a **stack** of protocols that work as a team(the **network stack**)       
+
+<img width="451" height="276" alt="Screenshot (954)" src="https://github.com/user-attachments/assets/16bc6dc3-3fcf-4635-93a0-72587db8dbce" />
 
