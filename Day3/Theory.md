@@ -106,6 +106,7 @@ Each solves a different part of the overall communication problem; to make sense
   * Together they form a **stack** of protocols that work as a team(the **network stack**)       
 
 * RFC 791, Internet Protocol, was published in 1981, but it is still the current standard we use today.
+**https://www.rfc-editor.org/info/rfc791/**
 * We can divide the stack into a few layers like this.
   
 <img width="451" height="276" alt="Screenshot (954)" src="https://github.com/user-attachments/assets/16bc6dc3-3fcf-4635-93a0-72587db8dbce" />
