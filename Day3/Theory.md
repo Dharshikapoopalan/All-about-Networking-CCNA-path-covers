@@ -1,42 +1,50 @@
-**OSI Model & TCP/IP Suite**
+**How the TCP/IP model actually works**
 
-OSI model + TCP/IP suite are both networking models. 
+Internet Protocol Suite
 
-1. What is a networking model?
+**Protocols & Standards**
 
-   <img width="997" height="175" alt="image" src="https://github.com/user-attachments/assets/f231c458-11fe-4836-baff-6dcf4c05f88c" />
+A protocol is a set of rules that defines how devices communicate over a network. 
 
-   Including how they should work together. Protocols refer to logical rules about how devices should communicate, not physical standards.
+Protocols are the "languages" that computers use to communicate.
 
-**Networking Model**
+Just as someone who only speaks Chinese cannot talk with someone who only speaks English.
 
-Visualize the networking model like 
+Computers that can't speak different protocols can't exchange data. 
 
-<img width="597" height="264" alt="image" src="https://github.com/user-attachments/assets/fad7b2fa-52e8-47e4-9f2c-61ce6322b41d" />
+-> Since the early days of computer networking, there have been several attempts to define the functions needed for computers to communicate with each other. 
 
-This is a networking model, & it categorizes and provides a structure for various networking protocols. 
+   * Often developed by a specific vendor (e.g., IBM) to be used with their own products.
+   * With a proprietary approach, enabling communications between different vendors' products was difficult.
 
-The different colors represent different categories of protocols & Standards. 
+<img width="722" height="139" alt="image" src="https://github.com/user-attachments/assets/4af8dec7-00d5-4ca7-9b09-125a5730e7c9" />
 
-These protocols & Standards could define something like the structure and usage of IP addresses, or maybe physical details like electrical voltage used on copper cables when transmitting data. 
+For example: If we have an iMac & an IBM server each using its own proprietary protocols, the IBM server wouldn't be able to understand a request from the iMac.
 
-**Network without Standardization**
+To solve this issue, today's networks & devices connect to them using standard vendor-neutral protocols & technologies. 
 
-What if there were no standard networking models & protocols?
+A standard is an agreed-upon specification that describes how a protocol or technology should work.
 
-<img width="951" height="424" alt="image" src="https://github.com/user-attachments/assets/94657ae9-93c4-4ee2-a491-d0084cb9b1a7" />
+With vendor-neutral standards, devices of all types can communicate with each other. 
+   * An Apple MacBook can access a website hosted on a web server running Linux.
+   * A PC running Windows can send an email that can be read on a smartphone running Android.
 
-Here are a few Dell PCs and a few iMacs. 
+-> As long as the devices follow standards, they can work together on the network. 
 
-If Dell & Apple each made their own networking model, each with their own set of networking protocols, these Dells would be able to communicate with each other, and these iMacs would be able to communicate with each other, but because the Dells & iMacs would speak a different language than each other, with a different set of rules about how to communicate, the Dells wouldn't be able to communicate with the iMacs. 
+How did TCP/IP come about? 
 
-This is obviously a problem in modern networks, such as the internet, where we expect devices from various makers in various countries to be able to communicate with each other. 
+**A bit of history**
 
-The OSI model is one attempt at standardizing network communications. 
+Early work on the computer networks that would evolve into today's Internet began in the 1960s (66 years ago).
 
-Although it isn't actually in use today, it has had a big impact on how network engineers think about networking, and we still refer to it today. 
+The U.S. Department of Defense's ARPA(Advanced Research Projects Agency) funded ARPANET, which came online in 1969 to connect mainframes at universities and labs. 
 
-**OSI Model**
+<img width="424" height="236" alt="image" src="https://github.com/user-attachments/assets/d7fa661b-b076-404b-abe5-64b02735a6a0" />
+
+
+
+
+
 
 
 
