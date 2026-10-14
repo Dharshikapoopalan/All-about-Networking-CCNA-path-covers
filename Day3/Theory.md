@@ -21,9 +21,9 @@ Computers that can't speak different protocols can't exchange data.
 
 For example: If we have an iMac & an IBM server each using its own proprietary protocols, the IBM server wouldn't be able to understand a request from the iMac.
 
-To solve this issue, today's networks & devices connect to them using standard vendor-neutral protocols & technologies. 
+To solve this issue, **today's networks & devices connect to them using standard vendor-neutral protocols & technologies.**
 
-A standard is an agreed-upon specification that describes how a protocol or technology should work.
+**A standard is an agreed-upon specification that describes how a protocol or technology should work.**
 
 With vendor-neutral standards, devices of all types can communicate with each other. 
    * An Apple MacBook can access a website hosted on a web server running Linux.
