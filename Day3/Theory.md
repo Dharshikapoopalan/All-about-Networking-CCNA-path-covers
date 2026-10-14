@@ -100,10 +100,20 @@ Each solves a different part of the overall communication problem; to make sense
   * Physical transmission of signals, local delivery on a LAN, routing between networks, end-to-end conversations,         applications themselves.
 * A model lets us group related jobs into layers.
   * Each layer has a specific role.
-  * Each later uses the services of the layer below and provides services to the layer above.
-* Protocols live(mostly) at one layer. sometimes the line are blurred and its hard to caregorize a protocol.
+  * Each layer uses the services of the layer below and provides services to the layer above.
+* Protocols live(mostly) at one layer. Sometimes the lines are blurred, and it's hard to categorize a protocol.
   * Some examples of protocols that we'll look at later are IP, TCP, and HTTP, etc.
   * Together they form a **stack** of protocols that work as a team(the **network stack**)       
 
+* RFC 791, Internet Protocol, was published in 1981, but it is still the current standard we use today.
+* We can divide the stack into a few layers like this.
+  
 <img width="451" height="276" alt="Screenshot (954)" src="https://github.com/user-attachments/assets/16bc6dc3-3fcf-4635-93a0-72587db8dbce" />
+
+  * At the top, we have the application layer, with protocols like Telnet, FTP & TFTP. 
+  * Likewise, each of the layers & the protocols in them play a different role in networking. This is the TCP/IP           model. (One version of it)
+
+  * The model is a description, not a law. For example, different textbooks/ courses use slightly different models (4-     layer, 5-layer, etc.)
+
+
 
