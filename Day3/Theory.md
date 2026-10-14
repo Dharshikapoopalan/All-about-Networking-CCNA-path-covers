@@ -68,7 +68,7 @@ When it comes to networking, these are two organizations you should be aware of;
   
 <img width="253" height="117" alt="image" src="https://github.com/user-attachments/assets/2b9db7ec-9dfa-4749-813b-ef0d4c2b2bad" />
 
-    -> IEEE develops many of the technologies used on local area networks.
+      -> IEEE develops many of the technologies used on local area networks.
       * Such as Ethernet (802.3)
       * Wi-Fi (802.11)
    
@@ -82,10 +82,10 @@ When it comes to networking, these are two organizations you should be aware of;
 
 <img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/50141bc5-afb0-46c5-8553-b1100635353d" />
 
-   -> An open community that defines protocols used on the Internet. 
+     -> An open community that defines protocols used on the Internet. 
      * TCP, IP, UDP, HTTP, DNS, etc.
 
-   -> Publishes standards in documents called RFCs (Requests for Comments) 
+     -> Publishes standards in documents called RFCs (Requests for Comments) 
      * All of which are freely available on the Internet.
 
 The IEEE and IRTF create the standards, and then vendors like Cisco implement them so that devices from different companies can work together. 
