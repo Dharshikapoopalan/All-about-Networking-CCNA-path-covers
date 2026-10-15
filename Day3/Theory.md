@@ -160,7 +160,7 @@ Often the letter will travel over multiple kinds of paths in its journey: Ground
 
 We can think of the last 2 layers combined as a delivery layer, or split them into 2 just like above in the analogy.
 
-  * That's why some netwroking models use 4 layers and some use 5.
+  * That's why some networking models use 4 layers, and some use 5.
 
 <img width="902" height="483" alt="Screenshot (960)" src="https://github.com/user-attachments/assets/5f97e81b-a78f-49bb-b0a5-fcfc0ab299aa" />
 
@@ -190,23 +190,36 @@ A "**host**" just means a device connected to the network that can send & reciev
 
 **Layer 1 - Physical Layer**
 
-<img width="750" height="422" alt="image" src="https://github.com/user-attachments/assets/8d8098ff-83c1-44c9-9d48-0fd4e1e1539d" />
+<img width="1101" height="167" alt="Screenshot (975)" src="https://github.com/user-attachments/assets/66bc2181-7dd3-4ed2-9293-4d374768d9eb" />
+
+
+* The Physical Layer(Layer 1) sends and receives bits as electrical, optical, or radio signals over the         medium.
+* Defines things like cables, connectors, signal levels, and link speeds.
+* Examples: Copper UTP cables, fiber-optic cables, Wi-Fi radios and antennas, network interface cards(NICs).
+* The physical aspects of transmitting data are very complex.
+  * Network engineers typically don't have to know the low-level details.  
+
+<img width="996" height="302" alt="Screenshot (976)" src="https://github.com/user-attachments/assets/2de1952c-98c7-4931-b163-e3d2cd3d161d" />
 
 **Layer 2 - Local Network Layer**
 
-<img width="897" height="502" alt="Screenshot (967)" src="https://github.com/user-attachments/assets/768fd235-2522-46a5-b67b-5aaf87c8e677" />
+<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/c96d9857-7772-4553-940a-8fff92d7c1eb" />
+
 
 **Layer 3 - Internet Layer**
 
-<img width="909" height="502" alt="Screenshot (968)" src="https://github.com/user-attachments/assets/5a6caa1a-b817-4837-ab21-83cc566a1ea8" />
+<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/dd40989d-dc7e-465e-a096-ca978295d4ca" />
+
 
 **Layer 4 - Transport Layer**
 
-<img width="889" height="507" alt="Screenshot (970)" src="https://github.com/user-attachments/assets/434d2127-aa72-454b-800a-3bd80fea28ce" />
+<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/cdbf4e7b-32ff-4251-83c0-3d05232648d1" />
+
 
 **Layer 5 - Application Layer**
 
-<img width="898" height="508" alt="Screenshot (974)" src="https://github.com/user-attachments/assets/cf2acd48-6ad6-4719-bab1-daebc0126592" />
+<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/fd59cb10-1ecf-4049-a251-fca5f5e3a4bd" />
+
 
 **Encapsulation and Decapsulation**
 
