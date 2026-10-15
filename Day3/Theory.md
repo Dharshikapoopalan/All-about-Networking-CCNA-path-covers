@@ -116,5 +116,20 @@ Each solves a different part of the overall communication problem; to make sense
 
   * The model is a description, not a law. For example, different textbooks/ courses use slightly different models (4-     layer, 5-layer, etc.)
 
+  * In our lessons, we are going to use the 5-layer model.
+
+Before jumping right into it, let's look at an analogy for this approach. 
+
+<img width="1283" height="383" alt="Screenshot (955)" src="https://github.com/user-attachments/assets/b1574de7-1e13-491b-b39f-87027dea0770" />
+
+Sending a letter to a friend by post. 
+
+* On the left, you are in your house, and on the right, Bob and Bob's wife are in their house. 
+* A couple of post offices are connected between their houses. 
+
+<img width="913" height="425" alt="Screenshot (957)" src="https://github.com/user-attachments/assets/2a594ba3-73bb-480d-bdf6-a96f14d0c2f3" />
+
+
+
 
 
