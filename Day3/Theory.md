@@ -127,7 +127,61 @@ Sending a letter to a friend by post.
 * On the left, you are in your house, and on the right, Bob and Bob's wife are in their house. 
 * A couple of post offices are connected between their houses. 
 
-<img width="913" height="425" alt="Screenshot (957)" src="https://github.com/user-attachments/assets/2a594ba3-73bb-480d-bdf6-a96f14d0c2f3" />
+<img width="1311" height="328" alt="Screenshot (958)" src="https://github.com/user-attachments/assets/4e33ca88-48ae-435e-857a-bdce9e1aa2b0" />
+
+* You write a letter addressed to your friend, Bob.
+* You put the letter in an envelope addressed to Bob's house.
+  * Bob's house is a bit far from where you live, so instead of driving directly to his house.
+* You deliver the envelope in your cat to post office A.
+    * Notice the 3 different destinations:
+      * Your car is going to post office A
+      * The envelope inside your car is going to Bob's house.
+      * The letter inside the envelope is going to Bob himself.
+  * Post office A moves the envelope to a truck and delivers it to post office B
+    * The truck's destination is post office B, but the envelope & letter inside keep their original destinations.
+  * Post office B moves the envelope to a new truck and delivers it to Bob's house.
+    * Once again, this truck has a different destination than the previous truck: Bob's house.
+    * The envelope and letter inside still have their original destinations.
+* The envelope is now delivered to Bob's house, opened & letter addressed to him is read by him.
+
+This simple letter system has different parts that care about different things. 
+  -> Message itself
+  -> Who should read it
+  -> Which house it goes to 
+  -> How it moves along the route
+
+We can turn those roles into a layered model, then compare it to how TCP/IP works. 
+
+So let's build that model. Don't need to remember this model or the names of the layers. It's just an analogy.
+
+<img width="893" height="485" alt="Screenshot (959)" src="https://github.com/user-attachments/assets/cd437bd2-07a6-4e55-9a15-532c1cc2fa3e" />
+
+Often the letter will travel over multiple kinds of paths in its journey: Ground -> Air -> then again Ground. 
+
+We can think of the last 2 layers combined as a delivery layer, or split them into 2 just like above in the analogy.
+
+  * That's why some netwroking models use 4 layers and some use 5.
+
+<img width="902" height="483" alt="Screenshot (960)" src="https://github.com/user-attachments/assets/5f97e81b-a78f-49bb-b0a5-fcfc0ab299aa" />
+
+* Content layer focuses on the actual contents of the letter, and that doesn't change throughout the journey.
+* The Recipient layer focuses on the person who should receive the letter and also remains the same from start to        finish.
+* The Address layer focuses on the address of the house or building to which the letter should be delivered, and that     stays the same as well.
+* The local Delivery layer focuses on getting the letter to the next stop in the route: post office A, then post         office B, and finally Bob's house.
+* The Infrastructure layer is the system of roads and mail trucks that the delivery process relies on.
+
+  * When you are writing a letter to Bob, you don't want to think about how the postal service will go about               delivering it.
+  * That doesn't mean the layers are entirely independent.
+ 
+  * For example: If you address the letter to somewhere overseas, that will influence how it's delivered.
+  * But that's not your concern as you write the letter.
+ 
+  * This separation of layers is true in our post system model example, and it's true of networks as well.
+ 
+  * Let's replace letters with **Data** & roads with **Networks**, & build the 5-Layer TCP/IP model we'll actually         use.  
+
+<img width="832" height="461" alt="Screenshot (961)" src="https://github.com/user-attachments/assets/f1bb6f77-20e7-443c-8089-227beccd2231" />
+
 
 
 
