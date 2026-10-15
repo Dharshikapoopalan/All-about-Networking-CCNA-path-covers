@@ -203,13 +203,38 @@ A "**host**" just means a device connected to the network that can send & reciev
 
 **Layer 2 - Local Network Layer**
 
-<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/c96d9857-7772-4553-940a-8fff92d7c1eb" />
+<img width="1000" height="164" alt="image" src="https://github.com/user-attachments/assets/c9e4ebc2-fbd4-4831-b271-354b4c04b703" />
 
+* The local Network Layer (Layer 2) provides hop-to-hop delivery of messages on a local network.
+  * A hop is one step along the path between two devices.
+    * From one router or host to the next router or host in the path.
+  * Switches don't count: a switch just extends the local network, allowing multiple devices to connect.
+
+* Uses MAC(Media Access Control) addresses to identify interfaces.
+  * PC1 sends the message to the MAC address of R1's G1 interface (NIC).
+  * R1 sends the message to the MAC address of R2's G1 interface (NIC).
+  * R2 sends the message to the MAC address of SRV1's interface (NIC).
+ 
+* Protocols at this layer include:
+  * Ethernet (IEEE 802.3)
+  * Wi-Fi (IEEE 802.11)       
 
 **Layer 3 - Internet Layer**
 
-<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/dd40989d-dc7e-465e-a096-ca978295d4ca" />
+<img width="932" height="137" alt="image" src="https://github.com/user-attachments/assets/2919c019-21cd-439a-86b4-7c2416438131" />
 
+
+* The Internet layer (Layer 3) provides end-to-end delivery between hosts across multiple networks.
+  * Internet = internetwork (between networks)
+ 
+* Uses IP addresses to identify hosts in the network.
+  * When PC1 sends a message to SRV1, it addresses the message to SRV1's IP address.
+ 
+* Routers operate mainly at this layer, using the message's destination IP address to forward the message toward its final destination host.
+
+* Protocols at this layer include:
+ * IP (IPv4, IPv6)
+ * ICMP (Internet Control Message Protocol)    
 
 **Layer 4 - Transport Layer**
 
