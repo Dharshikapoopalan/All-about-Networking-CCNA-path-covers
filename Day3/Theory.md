@@ -164,7 +164,7 @@ We can think of the last 2 layers combined as a delivery layer, or split them in
 
 <img width="902" height="483" alt="Screenshot (960)" src="https://github.com/user-attachments/assets/5f97e81b-a78f-49bb-b0a5-fcfc0ab299aa" />
 
-* Content layer focuses on the actual contents of the letter, and that doesn't change throughout the journey.
+* The Content layer focuses on the actual contents of the letter, and that doesn't change throughout the journey.
 * The Recipient layer focuses on the person who should receive the letter and also remains the same from start to        finish.
 * The Address layer focuses on the address of the house or building to which the letter should be delivered, and that     stays the same as well.
 * The local Delivery layer focuses on getting the letter to the next stop in the route: post office A, then post         office B, and finally Bob's house.
@@ -238,15 +238,63 @@ A "**host**" just means a device connected to the network that can send & reciev
 
 **Layer 4 - Transport Layer**
 
-<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/cdbf4e7b-32ff-4251-83c0-3d05232648d1" />
+<img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/fd59cb10-1ecf-4049-a251-fca5f5e3a4bd" />
 
+* The Transport layer (Layer 4) provides end-to-end communication between application processes.
+  * Also called "process-to-process" or "service-to-service".
+ 
+* Uses port numbers to identify the processes on each host.
+  * When the web client on PC1 wants to send a request to the web server running on SRV1, it addresses the message to port 80.
+ 
+* Runs mainly on the communicating hosts (PC1 and SRV1): routers normally operate based on IP (Layer 3), not on Transport-layer information.
+
+* Protocols at this layer include:
+  * UDP (User Datagram Protocol): simple and efficient
+  * TCP (Transmission Control Protocol): more robust features beyond basic message addressing  
 
 **Layer 5 - Application Layer**
 
 <img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/fd59cb10-1ecf-4049-a251-fca5f5e3a4bd" />
 
+* The Application layer (Layer 5) is where network communications meet applications.
+  * Usually called Layer 7
+ 
+* Defines how application processes format, send, and interpret data.
+
+* Protocols at this layer define message formats and rules for specific tasks, such as:
+  * Browsing web pages (HTTP/HTTPS)
+  * Transferring files (FTP, TFTP)
+  * Sending/receiveing email (SMTP, POP3, IMAP)
+ 
+* Network infrastructure devices(routers, switches) don't care about Application-layer details.
+  * They just move messages across the network.
+  * Only the communicating hosts interpret the data.     
 
 **Encapsulation and Decapsulation**
+
+Encapsulation 
+
+<img width="1084" height="428" alt="image" src="https://github.com/user-attachments/assets/3e7cf7b2-6d22-47fe-abb5-168bf068f61a" />
+
+* The **Application layer** prepares the data to be sent over the network.
+* As the message moves down the stack, each layer **encapsulates** the data with a **header** including the information needed for that layer.
+  * Source and destination addresses (port numbers, IP addresses, MAC addresses), etc.
+  * Layer 2 also adds a **trailer** that the receiving device uses to check for transmission errors.
+* The **Physical layer** transmits the bits as signals over the physical medium.
+  * The **L2 header** is transmitter first, and the **L2 trailer** is transmitter last.  
+
+Decapsulation
+
+<img width="1048" height="417" alt="image" src="https://github.com/user-attachments/assets/60d0bd9a-23a3-4eb7-b183-24b3ef2bbcd4" />
+
+* The receiving device receives the message as a stream of bits at Layer 1.
+* The device examines the information in the Layer 2 header and trailer, and then removes them (**decapsulation**).
+  * The decapsulation process continues up the stack: Layer 3 removes the L3 header, then Layer 4 removes the L4 header, and then the data is delivered to the Application layer.
+* The application processes the data and, if needed, generates a response that goes back down the stack.
+
+<img width="661" height="302" alt="image" src="https://github.com/user-attachments/assets/76afc57e-4a4b-4cdf-84e2-40dca2b24137" />
+
+
 
 
 
