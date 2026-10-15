@@ -182,6 +182,33 @@ We can think of the last 2 layers combined as a delivery layer, or split them in
 
 <img width="832" height="461" alt="Screenshot (961)" src="https://github.com/user-attachments/assets/f1bb6f77-20e7-443c-8089-227beccd2231" />
 
+We will see how they actually work in a real network between a client & a server. 
+
+<img width="850" height="503" alt="Screenshot (964)" src="https://github.com/user-attachments/assets/7f9c72c0-f8f9-49eb-9491-023390b9e69b" />
+
+A "**host**" just means a device connected to the network that can send & recieve data. 
+
+**Layer 1 - Physical Layer**
+
+<img width="750" height="422" alt="image" src="https://github.com/user-attachments/assets/8d8098ff-83c1-44c9-9d48-0fd4e1e1539d" />
+
+**Layer 2 - Local Network Layer**
+
+<img width="897" height="502" alt="Screenshot (967)" src="https://github.com/user-attachments/assets/768fd235-2522-46a5-b67b-5aaf87c8e677" />
+
+**Layer 3 - Internet Layer**
+
+<img width="909" height="502" alt="Screenshot (968)" src="https://github.com/user-attachments/assets/5a6caa1a-b817-4837-ab21-83cc566a1ea8" />
+
+**Layer 4 - Transport Layer**
+
+<img width="889" height="507" alt="Screenshot (970)" src="https://github.com/user-attachments/assets/434d2127-aa72-454b-800a-3bd80fea28ce" />
+
+**Layer 5 - Application Layer**
+
+<img width="898" height="508" alt="Screenshot (974)" src="https://github.com/user-attachments/assets/cf2acd48-6ad6-4719-bab1-daebc0126592" />
+
+**Encapsulation and Decapsulation**
 
 
 
