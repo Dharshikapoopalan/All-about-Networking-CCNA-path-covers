@@ -1,4 +1,4 @@
-**How the TCP/IP model actually works**
+<img width="775" height="282" alt="image" src="https://github.com/user-attachments/assets/d70d5bad-6d7f-4371-aba2-f7d70150bf70" />**How the TCP/IP model actually works**
 
 Internet Protocol Suite
 
@@ -294,9 +294,57 @@ Decapsulation
 
 <img width="661" height="302" alt="image" src="https://github.com/user-attachments/assets/76afc57e-4a4b-4cdf-84e2-40dca2b24137" />
 
+**Protocol data units**
 
+* At each stage in the encapsulation/decapsulation process, there is a name      given to the message.
+  * The combination of the data and an L4 header is called a **segment**(TCP)      or **datagram**(UDP).
+    * TCP creates segments; UDP creates datagrams.
+  * The combination of a **segment/datagram** and an L3 header is called a **packet**.
+  * The combination of a packet and an L2 header/trailer is called a **frame**.
+     * This is what is actually sent over the wire.
+     
+  * We can use alternative names to describe the message at each stage:  **Protocol Data Unit(PDU)**
+    * A segment or datagram is a **Layer 4 PDU (L4PDU)**.
+    * A packet is a **Layer 3 PDU (L3PDU)**.
+    * A frame is a **Layer 2 PDU (L2PDU)**.
+   
+  * The contents of each PDU (everything encapsulated by that layer's header/trailer) are called the **payload**.
+    * A **segment** or **datagram's** payload is the **application data**.
+    * A **packet**'s payload is a **segment** or **datagram**.
+    * A **frame**'s payload is a **packet**.
+   
+  <img width="187" height="113" alt="image" src="https://github.com/user-attachments/assets/a8d78fc6-f62d-4f0f-8a72-886f8f438a74" />
 
+ <img width="201" height="95" alt="image" src="https://github.com/user-attachments/assets/a69ef626-fd12-444a-8df7-473067d8d3f5" />
 
+<img width="307" height="84" alt="image" src="https://github.com/user-attachments/assets/5288e706-1893-46b4-8f63-b3839834bdfb" />
 
+**Adjacent-layer interaction**
 
+<img width="775" height="282" alt="image" src="https://github.com/user-attachments/assets/ddacddca-adb8-4b4d-b537-2929a9a486fd" />
 
+* Each layer provides a service to the layer above it and is serviced by the layer below it (**adjacent layer interaction**).
+  *  **Layer 4** provides a service to **Layer 5** by delivering data to the correct application using port numbers.
+  *  **Layer 3** provides a service to **Layer 4** by delivering segments/datagrams to the correct destination host using IP addresses.
+  *  **Layer 2** provides a service to **Layer 3** by delivering packets to the next hop using MAC addresses.
+  *  **Layer 1** provides a service to **Layer 2** by sending and receiving frames as electrical, optical, or radio signals.
+
+**Same-layer interaction** 
+
+<img width="906" height="342" alt="image" src="https://github.com/user-attachments/assets/6af9c700-a353-4d75-806f-b31b53674e26" />
+
+* Each layer communicates with the same layer on other devices (**same-layer interaction**).
+  * The Application layer on one host sends data to the Application layer on the other host.
+  * A segment/datagram is addressed to the **Layer 4 port number** of the correct application on the destination host.
+  * A packet is addressed to the **Layer 3 IP address** of the destination host.
+  * A frame is addressed to the **Layer 2 MAC address** of the next hop.
+  * Signals sent out of a physical port are received by a **physical port** on the connected device. 
+
+**Separation of Layers**
+
+<img width="1119" height="412" alt="image" src="https://github.com/user-attachments/assets/ed1ec10d-2882-48b0-9d00-f8a8082f0806" />
+
+* Each layer has its own job and provides a specific service to the layers above.
+  * The layers are modular.
+* As long as each layer keeps its "contract" with the other layers, we can improve or replace protocols at different layers without redesigning everything.
+* That flexibility is one of the main benefits of the layered model.   
