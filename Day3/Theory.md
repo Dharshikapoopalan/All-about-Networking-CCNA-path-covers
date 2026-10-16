@@ -1,4 +1,4 @@
-<img width="775" height="282" alt="image" src="https://github.com/user-attachments/assets/d70d5bad-6d7f-4371-aba2-f7d70150bf70" />**How the TCP/IP model actually works**
+**How the TCP/IP model actually works**
 
 Internet Protocol Suite
 
@@ -12,7 +12,7 @@ Just as someone who only speaks Chinese cannot talk with someone who only speaks
 
 Computers that can't speak different protocols can't exchange data. 
 
--> Since the early days of computer networking, there have been several attempts to define the functions needed for computers to communicate with each other. 
+-> Since the early days of computer networking, several attempts have tried to define the functions computers need to communicate with each other. 
 
    * Often developed by a specific vendor (e.g., IBM) to be used with their own products.
    * With a proprietary approach, enabling communications between different vendors' products was difficult.
@@ -88,7 +88,7 @@ When it comes to networking, these are two organizations you should be aware of;
      -> Publishes standards in documents called RFCs (Requests for Comments) 
      * All of which are freely available on the Internet.
 
-The IEEE and IRTF create the standards, and then vendors like Cisco implement them so that devices from different companies can work together. 
+The IEEE and IETF create the standards, and then vendors like Cisco implement them so that devices from different companies can work together. 
 
 But there are many different standards and protocols.
 
@@ -132,7 +132,7 @@ Sending a letter to a friend by post.
 * You write a letter addressed to your friend, Bob.
 * You put the letter in an envelope addressed to Bob's house.
   * Bob's house is a bit far from where you live, so instead of driving directly to his house.
-* You deliver the envelope in your cat to post office A.
+* You deliver the envelope in your car to post office A.
     * Notice the 3 different destinations:
       * Your car is going to post office A
       * The envelope inside your car is going to Bob's house.
@@ -165,10 +165,10 @@ We can think of the last 2 layers combined as a delivery layer, or split them in
 <img width="902" height="483" alt="Screenshot (960)" src="https://github.com/user-attachments/assets/5f97e81b-a78f-49bb-b0a5-fcfc0ab299aa" />
 
 * The Content layer focuses on the actual contents of the letter, and that doesn't change throughout the journey.
-* The Recipient layer focuses on the person who should receive the letter and also remains the same from start to        finish.
-* The Address layer focuses on the address of the house or building to which the letter should be delivered, and that     stays the same as well.
-* The local Delivery layer focuses on getting the letter to the next stop in the route: post office A, then post         office B, and finally Bob's house.
-* The Infrastructure layer is the system of roads and mail trucks that the delivery process relies on.
+* The Recipient layer focuses on the person who should receive the letter and also remains the same from start to finish.
+* The Address layer focuses on the address of the house or building to which the letter should be delivered, and that stays the same as well.
+* The local Delivery layer focuses on getting the letter to the next stop in the route: post office A, then post office B, and finally Bob's house.
+* The Infrastructure layer is the system of roads and trucks that the delivery process relies on.
 
   * When you are writing a letter to Bob, you don't want to think about how the postal service will go about               delivering it.
   * That doesn't mean the layers are entirely independent.
@@ -178,7 +178,7 @@ We can think of the last 2 layers combined as a delivery layer, or split them in
  
   * This separation of layers is true in our post system model example, and it's true of networks as well.
  
-  * Let's replace letters with **Data** & roads with **Networks**, & build the 5-Layer TCP/IP model we'll actually         use.  
+  * Let's replace letters with **Data** & roads with **Networks**, & build the 5-Layer TCP/IP model that we are actually using.  
 
 <img width="832" height="461" alt="Screenshot (961)" src="https://github.com/user-attachments/assets/f1bb6f77-20e7-443c-8089-227beccd2231" />
 
@@ -193,7 +193,7 @@ A "**host**" just means a device connected to the network that can send & reciev
 <img width="1101" height="167" alt="Screenshot (975)" src="https://github.com/user-attachments/assets/66bc2181-7dd3-4ed2-9293-4d374768d9eb" />
 
 
-* The Physical Layer(Layer 1) sends and receives bits as electrical, optical, or radio signals over the         medium.
+* The Physical Layer(Layer 1) sends and receives bits as electrical, optical, or radio signals over the medium.
 * Defines things like cables, connectors, signal levels, and link speeds.
 * Examples: Copper UTP cables, fiber-optic cables, Wi-Fi radios and antennas, network interface cards(NICs).
 * The physical aspects of transmitting data are very complex.
@@ -240,10 +240,10 @@ A "**host**" just means a device connected to the network that can send & reciev
 
 <img width="722" height="162" alt="image" src="https://github.com/user-attachments/assets/fd59cb10-1ecf-4049-a251-fca5f5e3a4bd" />
 
-* The Transport layer (Layer 4) provides end-to-end communication between application processes.
-  * Also called "process-to-process" or "service-to-service".
+* The Transport layer (Layer 4) provides **end-to-end communication between application processes**.
+  * Also called "**process-to-process**" or "**service-to-service**".
  
-* Uses port numbers to identify the processes on each host.
+* Uses **port numbers** to identify the processes on each host.
   * When the web client on PC1 wants to send a request to the web server running on SRV1, it addresses the message to port 80.
  
 * Runs mainly on the communicating hosts (PC1 and SRV1): routers normally operate based on IP (Layer 3), not on Transport-layer information.
@@ -281,7 +281,7 @@ Encapsulation
   * Source and destination addresses (port numbers, IP addresses, MAC addresses), etc.
   * Layer 2 also adds a **trailer** that the receiving device uses to check for transmission errors.
 * The **Physical layer** transmits the bits as signals over the physical medium.
-  * The **L2 header** is transmitter first, and the **L2 trailer** is transmitter last.  
+  * The **L2 header** is transmitted first, and the **L2 trailer** is transmitted last.  
 
 Decapsulation
 
@@ -296,14 +296,14 @@ Decapsulation
 
 **Protocol data units**
 
-* At each stage in the encapsulation/decapsulation process, there is a name      given to the message.
-  * The combination of the data and an L4 header is called a **segment**(TCP)      or **datagram**(UDP).
+* At each stage in the encapsulation/decapsulation process, there is a name given to the message.
+  * The combination of the data and an L4 header is called a **segment**(TCP) or **datagram**(UDP).
     * TCP creates segments; UDP creates datagrams.
   * The combination of a **segment/datagram** and an L3 header is called a **packet**.
   * The combination of a packet and an L2 header/trailer is called a **frame**.
      * This is what is actually sent over the wire.
      
-  * We can use alternative names to describe the message at each stage:  **Protocol Data Unit(PDU)**
+  * We can use alternative names to describe the message at each stage: **Protocol Data Unit(PDU)**
     * A segment or datagram is a **Layer 4 PDU (L4PDU)**.
     * A packet is a **Layer 3 PDU (L3PDU)**.
     * A frame is a **Layer 2 PDU (L2PDU)**.
@@ -348,3 +348,21 @@ Decapsulation
   * The layers are modular.
 * As long as each layer keeps its "contract" with the other layers, we can improve or replace protocols at different layers without redesigning everything.
 * That flexibility is one of the main benefits of the layered model.   
+
+**ISO/OSI Model**
+
+<img width="952" height="506" alt="image" src="https://github.com/user-attachments/assets/a864b37a-7a60-4eb3-90ff-302fbffcabf9" />
+
+* TCP/IP development started in the 1970s (ARPANET work, early TCP/IP specs).
+* In the late 1970s and 1980s, the International Organization for Standardization(ISO) designed a 7-layer Open Systems Interconnection (OSI) model and a matching protocol suite.
+  * The goal was to create international, vendor-neutral networking standards that could unify existing proprietary stacks and potentially replace TCP/IP.
+ 
+* Governments, including the US, promoted OSI as the preferred/recommended stack for new deployments.
+
+* OSI protocols ended up being late and complex, and never gained the same deployment as TCP/IP.
+  * TCP/IP "won" in the real world, although some OSI technologies are still used.
+ 
+  * Today, almost all real networks use TCP/IP, but the 7-layer OSI model survives as a reference/teaching model and a common way to talk about "layers".
+ 
+  * Most networking resources use a 5-layer model like the one covered in this lesson, but with names from the OSI model.
+    * That is why the TCP/IP Application layer is often called **Layer 7.**    
