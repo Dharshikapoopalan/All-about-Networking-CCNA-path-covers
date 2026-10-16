@@ -317,6 +317,7 @@ Decapsulation
 
  <img width="201" height="95" alt="image" src="https://github.com/user-attachments/assets/a69ef626-fd12-444a-8df7-473067d8d3f5" />
 
+
 <img width="307" height="84" alt="image" src="https://github.com/user-attachments/assets/5288e706-1893-46b4-8f63-b3839834bdfb" />
 
 **Adjacent-layer interaction**
