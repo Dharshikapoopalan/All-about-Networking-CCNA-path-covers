@@ -76,11 +76,11 @@ Then we press the Enter key to get started, and we are now free to type commands
 
 - User Exec mode is indicated by the 'greater than sign' next to the host name of the device.
 
-- Note: The default host name for this device is 'Router'.
+- Note: The default hostname for this device is 'Router'.
 
 - All devices have a hostname, and for a Cisco router, the default name is Router.
 
-**User Exec mode** - Outer layer
+**User Exec mode** - Outer layer/3rd layer
 
 - User Exec mode is very limited.
 - Users can look at some things, but can't make any changes to the configuration.
@@ -90,3 +90,107 @@ Then we press the Enter key to get started, and we are now free to type commands
 - So let's move to a mode with a little more power to make changes to the device.
 
 - If we enter the '**enable**' command in **user Exec mode**, we will be place in '**privileged Exec mode**'
+
+<img width="177" height="77" alt="image" src="https://github.com/user-attachments/assets/afa0af7f-6aeb-4904-8210-3d8858b8f6f6" />
+
+**Privileged Exec mode** - 2nd Layer
+
+- In privileged Exec mode, a pound sign, or hashtag, whatever you want to call it, is displayed.
+- Privileged Exec mode provides complete access to view the device's configuration, restart the device, etc.
+- Cannot change the configuration, but can change the time on the device, save the configuration file, etc.
+
+  **Commands available in user Exec mode Vs Privileged Exec mode**
+
+  **User Exec mode**
+
+  <img width="409" height="204" alt="image" src="https://github.com/user-attachments/assets/ed5590ea-6c5e-4620-83c4-1af4e84ed6a6" />
+
+  **Privileged Exec mode**
+
+  <img width="626" height="519" alt="image" src="https://github.com/user-attachments/assets/db5914e5-0d65-4a72-a0ee-1304ae30ffc5" />
+
+  These details were taken from Cisco Packet Tracer; it's a network simulator.
+
+  - Use a question mark (?) to view the available commands that are available in the mode.
+ 
+  **Cisco IOS CLI**
+
+<img width="208" height="72" alt="image" src="https://github.com/user-attachments/assets/a2d7c785-781b-4efe-95bc-443740e1c858" />
+
+- When we press Tab, the CLI will automatically complete the word for us and display the complete word on a new line.
+- Another convenience is that we don't even have to complete the command. (Short words will work)
+
+<img width="141" height="40" alt="image" src="https://github.com/user-attachments/assets/b636cbbe-8ff4-49a1-8c27-249ede36b69e" />
+
+- Here we just typed "en" and hit Enter, and I was brought to **privileged Exec mode**. 
+- This can really save us a lot of typing when we are entering many commands.
+- There are limits to this, however.
+
+<img width="249" height="51" alt="image" src="https://github.com/user-attachments/assets/e3f8e579-28df-4cc4-b5d0-7a6888cf286d" />
+
+- Although 'en' was enough for the router to understand that we meant to use the command 'enable'. That's because it is the only command that begins with EN that can be entered in **user EXEC mode**.
+
+- If we type just 'e ', however, we are told that it is an ambiguous command. That is because there is more than one command that begins with 'e'.
+
+- How can we view the commands that begin with e? Remember the question mark from before? If we type 'e' followed by a question mark, it displays the possible commands that begin with 'e'.
+
+<img width="210" height="35" alt="image" src="https://github.com/user-attachments/assets/2ab54c8f-3633-498b-8e8e-bb619de8e77e" />
+
+- There are two enable & exit, so if we type just 'e' and hit enter, the router doesn't know which command we want to use.
+- So the shortest form of the enable command is 'en' and the shortest form of the exit command will be 'ex'.
+
+**Global Configuration Mode** - inner layer 
+
+- Now let's actually make some changes to the router's configuration.
+- To do so, we enter the '**configure terminal**' command in privileged exec mode.
+
+<img width="457" height="63" alt="image" src="https://github.com/user-attachments/assets/fe3ac3df-b59b-4eea-bef3-0a541c766757" />
+
+- When in global configuration mode, config is inserted after the hostname.
+- Shortcut
+
+<img width="479" height="141" alt="image" src="https://github.com/user-attachments/assets/bc093f8c-c710-4c38-b960-ef8c4a639e8f" />
+
+- Notice we can type con? Then te? to find out the entire words that are used.
+
+<img width="318" height="102" alt="image" src="https://github.com/user-attachments/assets/437c8f8c-f042-4d2b-b1a6-53f5f7db7a8e" />
+
+  **Enable Password**
+ - We don't want just anyone to be able to make changes to the network configuration, or even be able to just look at the configuration, because that could be a security risk.
+
+ - We can protect **privileged exec mode** with a password, so that if a user enters the 'enable' command from **user EXEC mode**, they are asked for the password.
+
+ - This is done with the command **enable password** in **global configuration mode**.
+
+<img width="499" height="219" alt="image" src="https://github.com/user-attachments/assets/7619588c-56e2-41bf-b770-b4b7ab50c5d2" />
+
+ What is the use of the question mark?
+
+ - In the 2nd line, the question mark with no space after password output is password.
+ - If we use a question mark without a space, it shows all the possible completions of that word.
+ - I already typed the full word password, so it just displays the word again, and there are no other words that begin with password.
+
+ - On line 4, we used a question mark again this time with a space after password.
+
+ - Line 5
+ - Line 6:        On lines 5, 6, and 7, we received different output
+ - Line 7
+
+ - This time, it shows all possible options we could enter next in the command.
+
+ - In this case, we will use the middle one displayed in Line6
+ - LINE in all capital letters means we don't type LINE; you type a line, which will become the password.
+
+ - In line 8, we typed CCNA in all capitals as the password. Note that passwords are case-sensitive, so CCNA in capital letters & ccna in lower letters are different passwords.
+
+ - Once again, in line 8 we typed question mark with space to check if there are any further options.
+
+ - Line 9 **<cr>** means that there are no further options; the only option is to press Enter to enter the command.
+
+ - Once pressed, the password is set.
+
+Testing the password
+
+
+  
+
