@@ -5,7 +5,7 @@ Network Devices
 <img width="843" height="327" alt="image" src="https://github.com/user-attachments/assets/ea81d574-e857-4fbb-abfc-a744d9947c42" />
 
 What is a network?
-**A computer network is a digital telecommunications network that allows nodes to share resources. **
+**A computer network is a digital telecommunications network that allows nodes to share resources.**
 
 The building blocks of networks are end devices and network devices.
 
