@@ -207,9 +207,11 @@ We have to press **Enter**
 Review: 
 
 **When we need to set a password that is not encrypted.**
+
 <img width="523" height="203" alt="image" src="https://github.com/user-attachments/assets/2d3b3fbc-ee26-4ad6-bd21-b7da0d803ec3" />
 
 **When we need to remove the password we have enabled**
+
 <img width="540" height="217" alt="image" src="https://github.com/user-attachments/assets/a95139d3-b695-4046-96a5-fc61289dfe16" />
 
 
