@@ -220,15 +220,22 @@ Review:
 4. Exit from **global configuration mode**.
 5. Next, exit from **privileged EXEC mode**.
 6. When trying to access **user EXEC mode**, it asks for a password.
-7. Once password provided we are allowed to login to privileged Exec mode. 
+7. Once the password is provided, we are allowed to log in to privileged EXEC mode. 
 
 **Running-config / Startup-config**
 
-We confirmed the function of the password, but let's take a look at the configuration file itself to check it. 
+We confirmed the password works, but let's look at the configuration file itself to verify it. 
 
 There are two configuration files kept on the device. 
 - There are two separate configuration files kept on the device at once.
   - 1. Running-config -> The current, active configuration file on the device. As we enter commands in the CLI, we edit the active configuration.
-  - 2. Startup-config -> The configuration file that will be loaded upon restart of the device.     
+  - 2. Startup-config -> The configuration file loaded when the device restarts.
+
+  If you reload the device, or shut it down and then turn it on later, the startup-config will be loaded.
+  So let's take a look at the configuration files.
+
+  **Show running-config/ show startup-config**
+
+  
   
 
