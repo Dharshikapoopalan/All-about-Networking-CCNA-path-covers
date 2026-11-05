@@ -214,8 +214,21 @@ Review:
 
 <img width="540" height="217" alt="image" src="https://github.com/user-attachments/assets/a95139d3-b695-4046-96a5-fc61289dfe16" />
 
+1. Used the enable command to enter **privileged EXEC mode**.
+2. Used the configure terminal command to enter **global configuration mode**.
+3. Set the password using the **enable password ccna**. Passwords are always case-sensitive.
+4. Exit from **global configuration mode**.
+5. Next, exit from **privileged EXEC mode**.
+6. When trying to access **user EXEC mode**, it asks for a password.
+7. Once password provided we are allowed to login to privileged Exec mode. 
 
+**Running-config / Startup-config**
 
+We confirmed the function of the password, but let's take a look at the configuration file itself to check it. 
 
+There are two configuration files kept on the device. 
+- There are two separate configuration files kept on the device at once.
+  - 1. Running-config -> The current, active configuration file on the device. As we enter commands in the CLI, we edit the active configuration.
+  - 2. Startup-config -> The configuration file that will be loaded upon restart of the device.     
   
 
