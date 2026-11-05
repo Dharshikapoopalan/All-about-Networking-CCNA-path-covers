@@ -181,15 +181,38 @@ Then we press the Enter key to get started, and we are now free to type commands
  - In this case, we will use the middle one displayed in Line6
  - LINE in all capital letters means we don't type LINE; you type a line, which will become the password.
 
- - In line 8, we typed CCNA in all capitals as the password. Note that passwords are case-sensitive, so CCNA in capital letters & ccna in lower letters are different passwords.
+ - In line 8, we typed CCNA in all capitals as the password. Passwords are case-sensitive, so CCNA in capital letters & ccna in lowercase letters are different passwords.
 
- - Once again, in line 8 we typed question mark with space to check if there are any further options.
+ - Once again, in line 8, we typed a question mark with a space to check if there are any further options.
 
  - Line 9 **<cr>** means that there are no further options; the only option is to press Enter to enter the command.
 
  - Once pressed, the password is set.
 
-Testing the password
+**Testing the password**
+
+<img width="701" height="619" alt="image" src="https://github.com/user-attachments/assets/25105277-8ef8-4b8f-9598-76ad81b65bf1" />
+
+The router is now available, and the password has been fixed. 
+
+We have to press **Enter**
+
+<img width="698" height="615" alt="image" src="https://github.com/user-attachments/assets/e9157ef1-6ad9-479c-9053-14b72cdda567" />
+
+- The password does not display as we type it (for security purposes).
+- Also, if we enter the wrong password 3 times, we will be denied access for having "Bad secrets".
+
+<img width="680" height="275" alt="image" src="https://github.com/user-attachments/assets/d2ad2200-f552-4b17-95d9-392253c945d9" />
+
+Review: 
+
+**When we need to set a password that is not encrypted.**
+<img width="523" height="203" alt="image" src="https://github.com/user-attachments/assets/2d3b3fbc-ee26-4ad6-bd21-b7da0d803ec3" />
+
+**When we need to remove the password we have enabled**
+<img width="540" height="217" alt="image" src="https://github.com/user-attachments/assets/a95139d3-b695-4046-96a5-fc61289dfe16" />
+
+
 
 
   
