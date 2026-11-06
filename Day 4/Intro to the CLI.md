@@ -183,7 +183,7 @@ Then we press the Enter key to get started, and we are now free to type commands
 
  - In line 8, we typed CCNA in all capitals as the password. Passwords are case-sensitive, so CCNA in capital letters & ccna in lowercase letters are different passwords.
 
- - Once again, in line 8, we typed a question mark with a space to check if there are any further options.
+ - Once again, on line 8, we typed a question mark with a space to check if there are any further options.
 
  - Line 9 **<cr>** means that there are no further options; the only option is to press Enter to enter the command.
 
@@ -236,6 +236,61 @@ There are two configuration files kept on the device.
 
   **Show running-config/ show startup-config**
 
-  
-  
+<img width="681" height="385" alt="image" src="https://github.com/user-attachments/assets/01b20e90-73c6-4b8f-99dc-0b63e4c18f34" />
+
+<img width="571" height="83" alt="image" src="https://github.com/user-attachments/assets/2d708489-cfd1-43f5-9755-46c6f044fcb4" />
+
+  - This message is showing because we haven't saved the running configuration yet, so every time we restart the router, it will load a       default configuration, not the startup configuration.
+
+  **Saving the configuration file**
+
+  - There are actually 3 ways we can save the running configuration to make it the startup configuration.
+  - All 3 commands are executed from privileged exec mode.
+
+<img width="649" height="166" alt="image" src="https://github.com/user-attachments/assets/416ac99f-59a0-4ecf-b1eb-4cb3aea758d4" />
+
+ - After saving, if I use the show startup-config command again, it displays the same configuration as the show running-config command.
+
+ <img width="620" height="343" alt="image" src="https://github.com/user-attachments/assets/e104e6ef-696e-48ba-a483-342c65fe3fa5" />
+
+Here, we can see the password ccna in plain text. This is a security risk because anyone who simply takes a glance at this password knows how to get into privileged EXEC mode and then global configuration mode to make changes to the device. 
+
+Let's level up the security a bit. 
+
+**Service password-encryption command (Not safe; easy to crack)**
+
+ - You can do so with the 'service password-encryption ' command in global configuration mode. 
+
+<img width="650" height="77" alt="image" src="https://github.com/user-attachments/assets/122a504f-a682-403b-ad21-0f280359ef69" />
+
+ - The service password encryption command will encrypt all passwords into a jumble of numbers and letters, so that they cannot be easily read. 
+
+ - If we enter the show running config command again, notice that the password 'ccna' has become
+
+<img width="631" height="346" alt="image" src="https://github.com/user-attachments/assets/2e1318e5-3f91-46be-af77-23a670e793cb" />
+
+ccna is showing as 08224F4008. 
+
+- The password itself hasn't changed; it is still ccna, only the way it is displayed in the configuration has changed. A 7 has appeared before the password. This number 7 indicates the type of encryption used to encrypt the password.
+
+- The number 7 means it is using Cisco's proprietary encryption algorithm from the service password-encryption command.
+- Later in this lesson, you will see another number in this place.
+- Using the 'Service password-encryption' command is more secure than not using it, but it's still not very secure.
+- We can simply look on Google for a password cracker. 
+
+**enable secret (More secure method)**
+
+<img width="624" height="392" alt="image" src="https://github.com/user-attachments/assets/a001ac75-0642-48fd-a5b9-1216b3e6076d" />
+
+Line 2: Since I am still in global configuration mode, I typed 'do' in front of the command. 
+
+This is a convenient trick that allows you to execute privileged EXEC mode commands like 
+  - show running-config
+  - show startup-config
+
+  - In other configuration levels.
+
+  - **Show running-config = do sh run**
+
+  - 
 
