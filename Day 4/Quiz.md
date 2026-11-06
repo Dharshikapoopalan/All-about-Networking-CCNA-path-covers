@@ -18,7 +18,9 @@
   b) You must enter the enable password only.
   c) You must enter the enable secret only. 
 
-5. You enter the conf command to enter global configuration mode. What is the full-length version of the command?
-  a) Configuration time
+5. You enter the **conf t** command to enter global configuration mode. What is the full-length version of the command?
+
+a) Configuration time
+  
   b) configure terminal
   c) configuration terminal
