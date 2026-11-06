@@ -271,7 +271,7 @@ Let's level up the security a bit.
 
 ccna is showing as 08224F4008. 
 
-- The password itself hasn't changed; it is still ccna, only the way it is displayed in the configuration has changed. A 7 has appeared before the password. This number 7 indicates the type of encryption used to encrypt the password.
+- The password itself hasn't changed; it is still ccna, only the way it is displayed in the configuration has changed. A 7 has appeared before the password. The number 7 indicates the encryption type used for the password.
 
 - The number 7 means it is using Cisco's proprietary encryption algorithm from the service password-encryption command.
 - Later in this lesson, you will see another number in this place.
@@ -280,9 +280,9 @@ ccna is showing as 08224F4008.
 
 **enable secret (More secure method)**
 
-<img width="624" height="392" alt="image" src="https://github.com/user-attachments/assets/a001ac75-0642-48fd-a5b9-1216b3e6076d" />
+<img width="651" height="392" alt="image" src="https://github.com/user-attachments/assets/9e0b8100-05a2-46ef-92fa-70f55ef15f8a" />
 
-Line 2: Since I am still in global configuration mode, I typed 'do' in front of the command. 
+Line 4: Since I am still in global configuration mode, I typed 'do' in front of the command. 
 
 This is a convenient trick that allows you to execute privileged EXEC mode commands like 
   - show running-config
@@ -292,5 +292,49 @@ This is a convenient trick that allows you to execute privileged EXEC mode comma
 
   - **Show running-config = do sh run**
 
-  - 
+  - Number 5 in Line 18 indicates MD5-type encryption, which is much more secure than what we got with the service password encryption command.
+  - Service password encryption is not replaced.
+  - If the enable secret and enable password commands are configured, the enable password will be ignored.
+
+**Note:** The service password-encryption command has no effect on the enable secret command. 
+
+          The enable secret is always encrypted, whether or not you entered the service password-encryption command. 
+
+          So really we should always use the enable secret, instead of the enable password, as it is more secure. 
+
+**Cancelling Commands**
+
+- That is done by typing a 'no' in front of the command. 
+
+<img width="681" height="380" alt="image" src="https://github.com/user-attachments/assets/2d404040-b3a1-41f9-927b-11b43f1ee941" />
+
+When we type 'no service password-encryption', future passwords will NOT be encrypted. 
+
+However, as we can see here, passwords that are already encrypted will NOT be decrypted. By disabling service password-encryption. 
+
+If we enter a new password, however, it will be in clear text, NOT encrypted. 
+
+**Service encryption command summary**
+
+- If we enable service password-encryption
+  - Current passwords will be encrypted.
+  - Future passwords will be encrypted.
+  - The enable secret will not be affected. (Always encrypted)
+ 
+- If we disable service password-encryption..
+  - Current passwords will not be decrypted.
+  - Future passwords will not be encrypted.
+  - The enable secret will not be affected. (Always encrypted)
+ 
+**Modes Review**
+
+Router>   = User EXEC mode 
+
+Router#   = Privileged EXEC mode
+
+Router(config)#     = Global configuration mode. 
+
+
+
+
 
