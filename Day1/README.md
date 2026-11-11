@@ -122,6 +122,11 @@ A switch connects devices inside a LAN and forwards Ethernet frames based primar
 
 A traditional Layer 2 switch operates mainly at OSI Layer 2 – Data Link Layer.
 
+Switch examples: Catalyst 9200, Catalyst 3650 
+   - Have many netword interfaces/ ports for end hosts to connect to (Usually 24+)
+   - Provide **connectivity to hosts within the same Local Area Network (LAN)**.
+   - **Do not provide connectivity between LANs/over the internet.** 
+
 **6. Bridge**
 
 <img width="527" height="368" alt="image" src="https://github.com/user-attachments/assets/62c62eb9-5d72-4274-8818-bbf84906aed2" />
@@ -180,6 +185,10 @@ This distinction is extremely important:
 
 <img width="175" height="170" alt="image" src="https://github.com/user-attachments/assets/c19365ff-2e3f-40ad-8872-fc3f8cf28e5c" />
 
+Example models of Cisco enterprise routers: ISR 1000, ISR 900, ISR 4000
+   - Have fewer network interfaces than switches.
+   - Are used to provide connectivity between LANs.
+   - Are therefore used to send data over the internet. 
 
 **8. Client**
 
@@ -254,10 +263,20 @@ But:
 
 Modern firewalls can inspect much more than simple IP addresses and port numbers, depending on the firewall type.
 
-**A firewall protects networks and systems by allowing or blocking traffic according to security policies.**
+**A firewall protects networks and systems by allowing or blocking traffic according to security policies/rules.**
 
+**Examples of firewalls: ASA 5500 - x (Adaptive Security Appliance is Cisco's classic firewall), Firepower 2100 (next-generation firewall)**
+
+- Monitor and control network traffic based on configured rules.
+- Can be placed 'inside' the network or 'outside' the network.
+- Are known as 'Next-generation firewalls' when they include more modern and advanced filtering capabilities. 
+
+**Network Firewalls**
+   - Are network devices that filter traffic between networks
+     
+**Host-based Firewalls**
+   - Are software applications that filter traffic entering & exiting a host machine, like a PC.
 An Overview of the concepts discussed.
-
 
 Imagine you're sitting at home and opening a website:
 
