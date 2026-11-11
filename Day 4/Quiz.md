@@ -1,7 +1,7 @@
 1. What kind of cable is used to connect to a Cisco device via the RJ45 console port?
-  a) Rollover cable
-  b) Crossover cable
-  c) USB cable
+  -a) Rollover cable
+  -b) Crossover cable
+  -c) USB cable
 
 2. You type enable to enter privileged EXEC mode on your Cisco router; however, the password you enter is not accepted. What could be the problem?
   a) service password-encryption is enabled
