@@ -30,3 +30,25 @@ How data is sent from the router to other networks will be a topic for a future 
   - Switches operate at Layer 2 (Here we will be discussing Ethernet LAN switching, and Ethernet involves Layer 1 and Layer 2 of the OSI model)
   - Since we have covered the Layer 1 Ethernet Standards like UTP cables, here we will be discussing Layer 2. 
 
+Local Area Networks (LANs)
+
+  - LAN is: There are different ways of defining a LAN, and our understanding of a LAN will become complete as we learn more and more about            networking.
+  - Basically, it is a network contained within a relatively small area, like an office floor or our home network, which includes a small             geographical area.
+  - **Routers are used to connect separate LANs.**
+
+<img width="849" height="391" alt="image" src="https://github.com/user-attachments/assets/0db10910-3af9-44ae-8c26-e68c04c5a602" />
+
+  - Looking at the above diagram, we can see there are 4 LANs.
+  - Switches do not separate LANs, but adding more switches can be used to expand an existing LAN.
+
+<img width="905" height="423" alt="image" src="https://github.com/user-attachments/assets/148a715b-15a2-4fa0-9c37-834cf10ae6e0" />
+
+  - Devices inside the red box are part of one large LAN.
+  - The blue and black boxes are the same as the devices in the red box, but instead of the switches being connected, they are connected to different router interfaces. That means they are two separate LANs.
+
+**Sending data within LAN**
+
+  OSI Model - PDU
+
+  
+  
