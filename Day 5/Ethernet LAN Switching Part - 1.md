@@ -48,7 +48,61 @@ Local Area Networks (LANs)
 
 **Sending data within LAN**
 
-  OSI Model - PDU
+  OSI Model - PDU (Protocol Data Units)
 
+<img width="671" height="471" alt="image" src="https://github.com/user-attachments/assets/ed25437d-c7ad-48ac-8961-2ce81417375e" />
+
+  - The above shows the encapsulation process as data is prepared to be sent over a network.
+  - At the top, the data prepared by the upper layers of the OSI model is simply called data.
+  - A Layer 4 header is added & this combination of data & layer 4 header is called a segment.
+  - A Layer 3 header is added to the segment & it is now called a packet.
+  - Finally, a Layer 2 header & trailer are added to the packet; it becomes a frame.
+
+  - Layer 2 PDU -> Frame
+  - Layer 3 PDU -> Packet
+  - Layer 4 PDU -> Segment
+
+  - Will see how switches receive & forward frames, specifically Ethernet frames, since it's the Layer 2 protocol used in virtually every LAN in      existence today.
+  - Let's take a look at the actual contents of this Ethernet header & trailer.
+
+    <img width="918" height="312" alt="image" src="https://github.com/user-attachments/assets/fa45ba6b-478b-4415-b695-a7c6cffa432c" />
+
+  - There are 5 fields in the header.
+
+  **Preamble & SFD(Start Frame Delimeter)**
+    
+  - These are used for synchronization and to allow the receiving device to be prepared to receive the rest of the data in the frame.
+  - In networking, syncing(synchronization) refers to the process of ensuring data consistency across multiple devices or systems.
+  - It involves coordinating updates so that all devices maintain the same, up-to-date version of the information.
+  - This ensures that when data is modified on one device, the changes are reflected on all other connected devices, preventing discrepancies &       errors.
+
+  **Destination MAC Address**
+
+  - The Layer 2 address to which the frame is being sent. 
   
+  **Source MAC Address**
+
+  - The Layer 2 address of the device that sends the frame.
+
+  **Type**
   
+  - It indicates the Layer 3 protocol used in the encapsulated packet, which is almost always Internet Protocol (IP ---->  Version 4 (IPv4 - 0x0800) or Version 6 (IPv6 - 0x86DD).
+
+**L2 Trailer - FCS (Frame Check Sequence)**
+  
+  <img width="251" height="230" alt="image" src="https://github.com/user-attachments/assets/e53c1d98-8993-49b8-a047-5b906ccbb096" />
+
+  - However, sometimes this is a length field, indicating the length of encapsulated data, depending on the version of Ethernet.
+  - The Ethernet trailer has one field that is the FCS, which stands for frame check sequence.
+  - Used by the receiving device to detect any errors that might have occurred in transmission.
+  - Let's take a look at these fields in more detail:
+
+  **Preamble**
+
+  - Length: 7 bytes (7*8 = 56 bits)
+  - It is a series of alternating 1s and 0s. (10101010 10101010 10101010 10101010 10101010 10101010 10101010)
+  - The purpose of this is to allow devices to synchronize their receiver clocks. To make sure they are ready to receive the rest of the frame and the data inside. 
+
+    **SFD(Start Frame Delimeter)**
+
+                                                                                                              
